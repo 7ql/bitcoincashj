@@ -16,7 +16,7 @@ Release notes are [here](docs/Releases.md).
 
 ### Getting started
 
-To get started, it is best to have the latest JDK and Maven installed.
+To get started, it is best to have the latest JDK, JavaFX and Maven installed.
 
 #### Building from the command line
 
@@ -28,7 +28,10 @@ You can also run
 ```
 mvn site:site
 ```
-to generate a website with useful information like JavaDocs.
+to generate a website with useful information like JavaDocs or omit JavaDocs completely via
+```
+ -Dmaven.javadoc.skip=true
+```
 
 The outputs are under the `target` directory.
 
